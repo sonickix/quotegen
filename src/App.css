@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+body {
+     font-family: 'Rowdies', cursive;
+     background: linear-gradient(229deg, #11468f, #041562);
+     background-size: 400% 400%;
+ 
+     -webkit-animation: gradient 20s ease infinite;
+     animation: gradient 20s ease infinite;
+}
+#quote-box {
+     background: #EEEEEE;
+     width: 40rem;
+     margin: 10rem auto;
+     padding: 3rem;
+     border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#text {
+     font-size: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#author {
+     display: flex;
+     justify-content: flex-end;
+     font-size: 1.5rem;
+     margin-top: -2rem;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#buttons {
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+#tweet-quote {
+   background: #11468F;
+   cursor: pointer;
+   padding: 1rem 1.5rem;
+   border-radius: 10px;
+   transition-duration: 0.3s;
 }
+#tweet-quote:hover {
+     background-color: #DA1212;
+   }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#new-quote {
+     background: #11468F;
+     border: none;
+     color: #EEEEEE;
+     padding: 1rem 1.5rem;
+     font-size: 1rem;
+     font-family: 'Rowdies', cursive;
+     border-radius: 10px;
+     cursor: pointer;
+     transition-duration: 0.3s;
 }
+#new-quote:hover {
+     background-color: #DA1212;
+   }
